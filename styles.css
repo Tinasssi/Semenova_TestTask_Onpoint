@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 768px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 300vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+/* block one*/
+.one {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/1/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: margin 1s ease;
+}
+
+.button_global-img {
+  width: 15%;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  z-index: 16;
+}
+
+.button_one-img {
+  width: 25%;
+  position: absolute;
+  right: 15%;
+  bottom: 30%;
+}
+
+.button_one {
+  z-index: 16;
+}
+
+.drop {
+  position: absolute;
+  width: 5%;
+  bottom: 27%;
+  left: 4%;
+  animation: enlarge3 5s ease infinite;
+}
+
+.drop_1 {
+  position: absolute;
+  width: 20%;
+  right: 27%;
+  bottom: -3%;
+  animation: enlarge2 5s ease infinite;
+}
+
+.drop_2 {
+  position: absolute;
+  width: 6%;
+  right: 20%;
+  top: 10%;
+  animation: top-to-down 6s ease infinite;
+}
+
+.drop_3 {
+  position: absolute;
+  width: 10%;
+  right: 13%;
+  top: 20%;
+  animation: down-to-top 6s ease infinite;
+}
+
+.global_1 {
+  width: 7%;
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+  z-index: 10;
+}
+
+/* block two*/
+.two {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/2/bg_2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: margin 1s ease;
+}
+
+.scroll {
+  width: 2%;
+  position: absolute;
+  top: 30%;
+  left: 7%;
+}
+
+.body_txt {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  z-index: 10;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+.group_sperm {
+  width: 60%;
+  position: absolute;
+  top: 16%;
+  right: -10%;
+  z-index: 8;
+  opacity: 0.1;
+  animation: sperm_movement 8s cubic-bezier(0.86, -0.14, 0.42, 1.4) infinite;
+  transition: margin 1s ease;
+}
+
+.txt {
+  position: absolute;
+  top: 33%;
+  left: 14%;
+  font-size: 20px;
+  z-index: 12;
+  font-family: DIN Pro;
+  overflow: hidden;
+  height: 53%;
+  width: 69%;
+  display: flex;
+}
+
+#element {
+  overflow-y: scroll;
+  background-color: none;
+  top: 32%;
+  left: 7%;
+  font-size: 20px;
+  z-index: 12;
+  font-family: DIN Pro;
+  position: absolute;
+  height: 53%;
+  width: 73%;
+  direction: rtl;
+  text-align: left;
+  padding-left: 65px;
+  padding-top: 20px;
+}
+
+.overflow {
+  min-height: 400px;
+
+  display: flex;
+}
+
+#element::-webkit-scrollbar {
+  width: 20px;
+  background-color: transparent;
+}
+
+#element::-webkit-scrollbar-thumb {
+  background-color: #ff107c;
+  border-radius: 100px;
+  box-shadow: inset -7px -5px 10px -7px #ffffff, inset 0px 1px 6px 1px #686868;
+}
+
+#element::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  border: solid 8px transparent;
+  box-sizing: border-box;
+  background-clip: content-box;
+}
+
+/* block two*/
+.three {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/3/bg_3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: margin 1s ease;
+}
+
+.button_3 {
+  width: 25%;
+  position: absolute;
+  right: 9%;
+  bottom: 16%;
+}
+
+.bottle {
+  width: 22.5%;
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  z-index: 6;
+}
+
+.bubble_1 {
+  width: 3%;
+  position: absolute;
+  left: 8%;
+  top: 27%;
+  z-index: 5;
+  animation: bubble1_move 4s ease infinite;
+}
+
+.bubble_2 {
+  width: 12%;
+  position: absolute;
+  left: 17%;
+  top: 40%;
+  z-index: 5;
+  animation: bubble2_move 4s ease infinite;
+}
+
+.bubble_3 {
+  width: 3%;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  z-index: 5;
+  animation: bubble3_move 3s ease infinite;
+}
+
+.bubble_4 {
+  width: 6%;
+  position: absolute;
+  left: 24%;
+  bottom: 15%;
+  z-index: 5;
+  animation: bubble4_move 8s ease infinite;
+}
+
+.bubble_5 {
+  width: 6%;
+  position: absolute;
+  left: 18%;
+  top: 22%;
+  z-index: 7;
+  animation: enlarge2 3s ease infinite;
+}
+
+.bubble_6 {
+  width: 14%;
+  position: absolute;
+  left: 18%;
+  bottom: 0;
+  z-index: 7;
+  animation: enlarge2 5s ease infinite;
+}
+
+.bubble_7 {
+  width: 4%;
+  position: absolute;
+  left: 0.5%;
+  bottom: 38%;
+  z-index: 7;
+  animation: bubble7_move 5s ease infinite;
+}
+
+.bubble_8 {
+  width: 7%;
+  position: absolute;
+  left: 2.5%;
+  bottom: 19%;
+  z-index: 7;
+  animation: enlarge2 7s ease infinite;
+}
+
+.popup {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #313030ab;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden auto;
+  padding-top: 50px;
+}
+
+img.pop {
+  width: 75%;
+}
+
+.popup_txt1,
+.popup_txt2 {
+  width: 40%;
+  position: absolute;
+  left: 32%;
+  top: 45%;
+  z-index: 7;
+}
+
+.btn_pagina {
+  width: 1%;
+  position: absolute;
+  left: 36.25%;
+  bottom: 16.46%;
+  z-index: 7;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  z-index: 15;
+  right: 15%;
+  top: 20%;
+  padding: 14px 16px;
+  margin: 0;
+  width: 7%;
+}
+
+.btn_prev {
+  width: 1%;
+  position: absolute;
+  left: 32%;
+  bottom: 16%;
+  z-index: 15;
+}
+
+.btn_next {
+  width: 1%;
+  position: absolute;
+  left: 39%;
+  bottom: 16%;
+  z-index: 7;
+}
+
+/*общие */
+
+.ml {
+  margin-left: -100vw;
+}
+
+.ml_back {
+  margin-left: 0;
+}
+
+@keyframes enlarge {
+  0% {
+    width: 23%;
+  }
+
+  50% {
+    width: 25%;
+  }
+
+  100% {
+    width: 23%;
+  }
+}
+
+@keyframes top-to-down {
+  0% {
+    right: 20%;
+    top: 10%;
+  }
+
+  50% {
+    right: 21%;
+    top: 16%;
+  }
+
+  100% {
+    right: 20%;
+    top: 10%;
+  }
+}
+
+@keyframes enlarge2 {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    ransform: scale(1, 1);
+  }
+}
+
+@keyframes down-to-top {
+  0% {
+    right: 13%;
+    top: 20%;
+  }
+
+  50% {
+    right: 12%;
+    top: 22%;
+  }
+
+  100% {
+    right: 13%;
+    top: 20%;
+  }
+}
+
+@keyframes enlarge3 {
+  0% {
+    transform: scale(1, 1);
+    bottom: 27%;
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+    bottom: 26%;
+  }
+
+  100% {
+    ransform: scale(1, 1);
+    bottom: 27%;
+  }
+}
+
+@keyframes sperm_movement {
+  0% {
+    top: 16%;
+    right: -10%;
+    opacity: 0.1;
+  }
+
+  50% {
+    top: 12%;
+    right: 0;
+    opacity: 1;
+  }
+
+  100% {
+    top: 11%;
+    right: 1%;
+    opacity: 0;
+  }
+}
+
+@keyframes bubble1_move {
+  0% {
+    left: 8%;
+    top: 27%;
+  }
+
+  50% {
+    left: 7%;
+    top: 28%;
+  }
+
+  100% {
+    left: 8%;
+    top: 27%;
+  }
+}
+
+@keyframes bubble2_move {
+  0% {
+    left: 17%;
+    top: 40%;
+  }
+
+  50% {
+    left: 19%;
+    top: 42%;
+  }
+
+  100% {
+    left: 17%;
+    top: 40%;
+  }
+}
+
+@keyframes bubble3_move {
+  0% {
+    left: 20%;
+    top: 10%;
+  }
+
+  50% {
+    left: 21%;
+    top: 9%;
+  }
+
+  100% {
+    left: 20%;
+    top: 10%;
+  }
+}
+
+@keyframes bubble4_move {
+  0% {
+    left: 24%;
+    bottom: 15%;
+  }
+
+  50% {
+    left: 26%;
+    bottom: 13%;
+  }
+
+  100% {
+    left: 24%;
+    bottom: 15%;
+  }
+}
+
+@keyframes bubble7_move {
+  0% {
+    left: 0.5%;
+    bottom: 38%;
+  }
+
+  50% {
+    left: 1%;
+    bottom: 39%;
+  }
+
+  100% {
+    left: 0.5%;
+    bottom: 38%;
+  }
+}
+
